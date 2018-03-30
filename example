@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+
+from urllib.request import urlopen
+from sslmasterkey import get_ssl_master_key
+
+resp = urlopen('https://api.github.com/')
+
+print(resp.status, resp.reason)
+print(get_ssl_master_key(resp.fp.raw._sock))
