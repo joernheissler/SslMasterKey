@@ -5,6 +5,10 @@ Python module to retrieve the Master Key and Client Random from an `ssl.SSLSocke
 This can be used to decrypt TLS traffic with [WireShark](https://www.wireshark.org/).
 See <https://wiki.wireshark.org/SSL#Using_the_.28Pre.29-Master-Secret> for more details.
 
+### Deprecated
+
+For python >= 3.8 use <https://docs.python.org/3/library/ssl.html#ssl.SSLContext.keylog_filename> instead!
+
 ## Requirements
 
   * cpython
